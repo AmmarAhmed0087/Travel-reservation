@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div  class="form-container">
+        <h1>Travel Reservation</h1>
+        <h3>Reserve a pickup</h3>
+        <hr>
+        <form action="/submit form" method="POST">
+         <h2>Personal Information</h2>
+         <p class="name">Name*  <input type="text" name="First name" required placeholder="First Name"  >   <input type="text" name="Last name" required placeholder="Last Name"></p>
+       
+
+         <label for="email">Email:</label>   
+
+         <input type="email" id="email" name="email" required placeholder="example@example.com"><br><br>
+
+         <label for="phoneNumber">Phone Number:</label>
+         <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>   
+
+       
+        <h2>Trip Information</h2>
+        <hr>
+        <p>Type of Trip</p>
+        <p>One Way</p><input type="radio" name="Type of Trip" ></p>
+        <p>Round Trip</p><input type="radio" name="Type of Trip"> </p>
+        <p>Hourly</p><input type="radio" name="Type of Trip" required></p>
+        <p>Pick Up Date/Time<input type="date" name="Date" required>
+            <input type="time" name="Time" required placeholder="H:H M:M">
+            <select id="pickupAMPM" name="pickupAMPM">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option> 
+        </select></p>
+       
+    <p>Return Pick Up Date/Time<input type="date" name="Date" id="pickup_date"required>
+        <input type="time" name="Time" id="pickup_time"required placeholder="H:H M:M">
+        <select id="pickupAMPM" name="pickupAMPM">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option> 
+    </select></p>
+    
+        <p>Number Of Hours   <input type="number" name="number of hours" required></p>
+        <p>Is this an airport pickup</p><input type="radio" name="Is this an airport pickup" id="Is this an airport pickup">
+        <p>Yes</p>
+        <input type="radio" name="Is this an airport pickup" required><p>No</p>
+        <p>Airport 
+            <select name="Please select"  required>
+            <option value="Please Select">Please Select</option>
+            <option value="Jinnah International Airport">Jinnah International Airport</option>
+            <option value="Dubai International Airport">Dubai International Airport</option>
+            <option value="Kaulalampur International Airport">Kaulalampur International Airport</option></select>
+        </p>
+        <p>Airline
+            <select name="Please select"  required>
+            <option value="Please Select">Please Select</option>
+            <option value="Emirates">Emirates</option>
+            <option value="Pakistan International Airline">Pakistan International Airline</option>
+            <option value="Malaysian Airways">Malaysian Airways</option></select>
+        </p>
+        <p>Flight Number <input type="number" name="flight number" required></p> 
+        <p>Number of luggage  
+            <select name="Please select"  required>
+            <option value="Please Select">Please Select</option>
+            <option value="1">1</option>
+            <option value="Dubai International Airport">2</option>
+            <option value="3">3</option></select>
+        </p>
+        <p>Pick Up Location/Address <input type="text" name="Address"></p>
+        <p>Drop off Location/Address <input type="text" name="Address"></p>
+        <p>Number of Passengers  
+            <select name="Please select"  required>
+            <option value="Please Select">Please Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="More than 10">More than 10</option>
+        </select> </p>
+        <p>Additional Stops</p>
+        <p>Yes</p><input type="radio" name="Type of Trip" ></p>
+        <p>No</p><input type="radio" name="Type of Trip" required> </p>
+        <p>Please Specify The Stops <textarea name="stops" cols="30" rows="10" placeholder="Type here" ></textarea></p>
+        <p>Will you required a child car seat</p>
+        <p>Yes</p><input type="radio" name="Type of Trip" ></p>
+        <p>No</p><input type="radio" name="Type of Trip" required> </p>
+        <p>Number of Passengers  
+            <select name="Please select"  required>
+            <option value="Please Select">Please Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select> </p>
+        <p>Comment/Special Requests<textarea name="stops" cols="30" rows="10" placeholder="Type here" Optional></textarea></p>
+        <hr>
+        <p><input type="SUBMIT" name="SUBMIT"></p>
+
+
+    </form>
+</div>
+</body>
+</html>
